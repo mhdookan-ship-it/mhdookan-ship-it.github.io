@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MH Smart — إم إتش سمارت لخدمات الكهرباء والسباكة</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#182B3A;
+    --amber:#E7A33E;
+    --copper:#B5652A;
+    --paper:#F6F3EC;
+    --ink:#1E2124;
+    --teal:#2F6F6D;
+    --line: rgba(24,43,58,0.14);
+    --maxw: 1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Tajawal','Space Grotesk',sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  [dir="ltr"] body{ font-family:'Space Grotesk','Tajawal',sans-serif; }
+
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+
+  /* ---------- top bar ---------- */
+  header.top{
+    position:sticky; top:0; z-index:50;
+    background:var(--navy);
+    color:#fff;
+    border-bottom:3px solid var(--amber);
+  }
+  .top .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    height:64px;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-weight:900; font-size:1.15rem; letter-spacing:.2px;
+  }
+  .brand .mark{
+    height:34px; width:auto; flex:none;
+    display:flex; align-items:center;
+  }
+  .brand .mark img{height:100%; width:auto; display:block;}
+  .top-actions{display:flex; align-items:center; gap:14px;}
+  .lang-btn{
+    border:1px solid rgba(255,255,255,.35);
+    background:transparent; color:#fff;
+    padding:7px 14px; border-radius:100px;
+    font-family:'Space Grotesk',sans-serif; font-size:.85rem; cursor:pointer;
+    transition:background .15s ease;
+  }
+  .lang-btn:hover{background:rgba(255,255,255,.12);}
+  .call-pill{
+    background:var(--amber); color:var(--navy);
+    padding:8px 16px; border-radius:100px;
+    font-weight:700; font-size:.9rem; text-decoration:none;
+    display:none;
+  }
+  .call-pill.wa{ background:#25D366; color:#fff; }
+  @media(min-width:640px){ .call-pill{display:inline-block;} }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    background:var(--navy);
+    color:#fff;
+    overflow:hidden;
+    padding:76px 0 96px;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+      radial-gradient(circle at 12% 20%, rgba(231,163,62,.18), transparent 40%),
+      radial-gradient(circle at 88% 78%, rgba(47,111,109,.28), transparent 45%);
+    pointer-events:none;
+  }
+  .hero .wrap{position:relative; z-index:2;}
+  .hero-grid{
+    display:grid; gap:36px;
+  }
+  @media(min-width:860px){
+    .hero-grid{grid-template-columns:1.25fr 1fr; align-items:center;}
+  }
+  .eyebrow-row{
+    display:flex; gap:10px; flex-wrap:wrap; margin-bottom:22px;
+  }
+  .chip{
+    border:1px solid rgba(255,255,255,.3);
+    padding:6px 14px; border-radius:100px;
+    font-size:.82rem; color:rgba(255,255,255,.85);
+  }
+  h1.hero-title{
+    font-size:clamp(2.1rem, 4.2vw, 3.2rem);
+    font-weight:900; line-height:1.25;
+    margin:0 0 18px;
+  }
+  h1.hero-title span{color:var(--amber);}
+  .hero-sub{
+    font-size:1.08rem; color:rgba(255,255,255,.82);
+    max-width:520px; margin:0 0 30px;
+  }
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 26px; border-radius:10px;
+    font-weight:700; font-size:1rem; text-decoration:none;
+    border:2px solid transparent; cursor:pointer;
+  }
+  .btn-primary{background:var(--amber); color:var(--navy);}
+  .btn-primary:hover{background:#f0b45c;}
+  .btn-ghost{border-color:rgba(255,255,255,.4); color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.1);}
+  .btn-wa{background:#25D366; color:#fff;}
+  .btn-wa:hover{background:#2fe077;}
+
+  .hero-panel{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:18px;
+    padding:28px;
+  }
+  .hero-panel .row{
+    display:flex; align-items:flex-start; gap:14px;
+    padding:14px 0; border-bottom:1px solid rgba(255,255,255,.12);
+  }
+  .hero-panel .row:last-child{border-bottom:none;}
+  .ico{
+    width:40px; height:40px; flex:none; border-radius:10px;
+    background:rgba(231,163,62,.16);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .ico svg{width:20px; height:20px; stroke:var(--amber); fill:none; stroke-width:2;}
+  .row h4{margin:0 0 2px; font-size:1rem;}
+  .row p{margin:0; font-size:.88rem; color:rgba(255,255,255,.7);}
+
+  /* ---------- services ---------- */
+  section{padding:76px 0;}
+  .section-head{max-width:620px; margin:0 auto 46px;}
+  [dir="rtl"] .section-head{margin:0 0 46px;}
+  .kicker{
+    color:var(--copper); font-weight:700; font-size:.85rem;
+    margin:0 0 8px;
+  }
+  h2{
+    font-size:clamp(1.6rem,3vw,2.2rem); font-weight:900; margin:0 0 10px;
+    color:var(--navy);
+  }
+  .section-head p{color:#55606B; font-size:1.02rem; margin:0;}
+
+  .services-grid{
+    display:grid; gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  }
+  .svc{
+    background:#fff;
+    border:1px solid var(--line);
+    border-top:4px solid var(--teal);
+    padding:26px 22px;
+  }
+  .svc:nth-child(1){border-top-color:var(--amber);}
+  .svc:nth-child(2){border-top-color:var(--copper);}
+  .svc:nth-child(3){border-top-color:var(--teal);}
+  .svc .num{
+    font-family:'Space Grotesk',sans-serif; font-weight:700;
+    color:#B7BEC4; font-size:.85rem; margin-bottom:14px;
+  }
+  .svc h3{margin:0 0 10px; font-size:1.15rem; color:var(--navy);}
+  .svc p{margin:0; color:#55606B; font-size:.95rem;}
+  .svc ul{margin:14px 0 0; padding:0; list-style:none; font-size:.9rem; color:#3D454C;}
+  .svc li{padding:4px 0; padding-inline-start:16px; position:relative;}
+  .svc li::before{
+    content:"—"; position:absolute; inset-inline-start:0; color:var(--copper);
+  }
+
+  /* ---------- why ---------- */
+  .why{background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .why-grid{
+    display:grid; gap:34px;
+  }
+  @media(min-width:860px){ .why-grid{grid-template-columns:1fr 1fr; align-items:center;} }
+  .why-list{display:flex; flex-direction:column; gap:22px;}
+  .why-item{display:flex; gap:16px; align-items:flex-start;}
+  .why-item .ico{background:rgba(47,111,109,.12);}
+  .why-item .ico svg{stroke:var(--teal);}
+  .why-item h4{margin:0 0 4px; font-size:1.05rem; color:var(--navy);}
+  .why-item p{margin:0; color:#55606B; font-size:.94rem;}
+  .why-card{
+    background:var(--navy); color:#fff; border-radius:18px;
+    padding:32px; position:relative; overflow:hidden;
+  }
+  .why-card::after{
+    content:""; position:absolute; inset-inline-end:-40px; bottom:-40px;
+    width:160px; height:160px; border-radius:50%;
+    background:rgba(231,163,62,.18);
+  }
+  .why-card p.big{
+    font-size:1.25rem; font-weight:700; line-height:1.5; margin:0 0 16px; position:relative; z-index:2;
+  }
+  .why-card p.sig{color:rgba(255,255,255,.65); font-size:.9rem; margin:0; position:relative; z-index:2;}
+
+  /* ---------- areas ---------- */
+  .areas{text-align:center;}
+  .area-tags{
+    display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:28px;
+  }
+  .area-tags span{
+    border:1px solid var(--line); background:#fff;
+    padding:8px 16px; border-radius:100px; font-size:.88rem; color:var(--navy);
+  }
+
+  /* ---------- contact ---------- */
+  .contact{
+    background:var(--navy); color:#fff;
+  }
+  .contact-grid{
+    display:grid; gap:36px;
+  }
+  @media(min-width:860px){ .contact-grid{grid-template-columns:1fr 1fr;} }
+  .contact h2{color:#fff;}
+  .contact .section-head p{color:rgba(255,255,255,.75);}
+  .contact-cards{display:flex; flex-direction:column; gap:14px;}
+  .ccard{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:14px; padding:20px 22px;
+    display:flex; align-items:center; gap:16px;
+    text-decoration:none; color:#fff;
+    transition:background .15s ease;
+  }
+  .ccard:hover{background:rgba(255,255,255,.12);}
+  .ccard .ico{background:rgba(231,163,62,.18); width:44px; height:44px;}
+  .ccard .ico svg{stroke:var(--amber); width:22px; height:22px;}
+  .ccard h4{margin:0; font-size:1rem;}
+  .ccard p{margin:2px 0 0; font-size:.85rem; color:rgba(255,255,255,.65);}
+
+  .hours-box{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:14px; padding:24px;
+  }
+  .hours-box h4{margin:0 0 14px; font-size:1rem;}
+  .hours-row{
+    display:flex; justify-content:space-between;
+    padding:9px 0; border-bottom:1px dashed rgba(255,255,255,.15);
+    font-size:.92rem; color:rgba(255,255,255,.85);
+  }
+  .hours-row:last-child{border-bottom:none;}
+
+  footer{
+    background:#101B26; color:rgba(255,255,255,.55);
+    padding:26px 0; font-size:.85rem;
+    text-align:center;
+  }
+
+  /* language visibility */
+  [data-tr-en]{display:none;}
+  [dir="ltr"] [data-tr-en]{display:inherit;}
+  [dir="ltr"] [data-tr-ar]{display:none;}
+  [dir="ltr"] span[data-tr-en], [dir="ltr"] p[data-tr-en], [dir="ltr"] h1[data-tr-en],
+  [dir="ltr"] h2[data-tr-en], [dir="ltr"] h3[data-tr-en], [dir="ltr"] h4[data-tr-en],
+  [dir="ltr"] li[data-tr-en], [dir="ltr"] div[data-tr-en]{display:block;}
+  [dir="ltr"] a.btn[data-tr-en], [dir="ltr"] a.ccard[data-tr-en]{display:flex;}
+  [dir="ltr"] span.chip[data-tr-en]{display:inline-block;}
+
+  /* WhatsApp floating button */
+  .wa-float{
+    position:fixed; bottom:20px; inset-inline-end:20px; z-index:60;
+    background:#25D366; color:#fff; width:56px; height:56px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 6px 18px rgba(0,0,0,.25); text-decoration:none;
+  }
+  .wa-float svg{width:26px; height:26px; fill:#fff;}
+
+  /* ---------- animations ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal{
+      opacity:0; transform:translateY(24px);
+      transition:opacity .7s ease, transform .7s ease;
+    }
+    .reveal.in-view{opacity:1; transform:translateY(0);}
+
+    .hero-title{animation:fadeUp .8s ease .1s both;}
+    .hero-sub{animation:fadeUp .8s ease .25s both;}
+    .cta-row{animation:fadeUp .8s ease .4s both;}
+    .hero-panel{animation:fadeUp .8s ease .55s both;}
+    .eyebrow-row{animation:fadeUp .8s ease 0s both;}
+
+    @keyframes fadeUp{
+      from{opacity:0; transform:translateY(18px);}
+      to{opacity:1; transform:translateY(0);}
+    }
+
+    .svc{transition:transform .25s ease, box-shadow .25s ease;}
+    .svc:hover{transform:translateY(-6px); box-shadow:0 14px 30px rgba(24,43,58,.12);}
+
+    .why-item .ico{transition:transform .3s ease;}
+    .why-item:hover .ico{transform:scale(1.1) rotate(-4deg);}
+
+    .ccard{transition:transform .25s ease, background .25s ease;}
+    .ccard:hover{transform:translateX(-4px);}
+    [dir="ltr"] .ccard:hover{transform:translateX(4px);}
+
+    .btn{transition:transform .2s ease, background .2s ease;}
+    .btn:hover{transform:translateY(-2px);}
+
+    .area-tags span{transition:transform .2s ease, background .2s ease, color .2s ease;}
+    .area-tags span:hover{
+      background:var(--navy); color:#fff; transform:translateY(-3px);
+    }
+
+    .wa-float{
+      animation:floatPulse 2.8s ease-in-out infinite;
+    }
+    @keyframes floatPulse{
+      0%,100%{box-shadow:0 6px 18px rgba(0,0,0,.25);}
+      50%{box-shadow:0 6px 24px rgba(37,211,102,.55);}
+    }
+
+    .hero::before{
+      animation:glowDrift 12s ease-in-out infinite alternate;
+    }
+    @keyframes glowDrift{
+      from{opacity:.8;}
+      to{opacity:1; background-position:2% 2%, 98% 98%;}
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <span class="mark"><img src="data:image/png;base64,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" alt="MH Smart logo"></span>
+    </div>
+    <div class="top-actions">
+      <a class="call-pill wa" href="https://wa.me/966571120917" target="_blank" data-tr-ar>واتساب</a>
+      <a class="call-pill wa" href="https://wa.me/966571120917" target="_blank" data-tr-en>WhatsApp</a>
+      <a class="call-pill" href="tel:+966571120917" data-tr-ar>اتصل الآن</a>
+      <a class="call-pill" href="tel:+966571120917" data-tr-en>Call Now</a>
+      <button class="lang-btn" onclick="toggleLang()" id="langBtn">English</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow-row">
+          <span class="chip" data-tr-ar>الرياض وضواحيها</span>
+          <span class="chip" data-tr-en>Riyadh & surrounding areas</span>
+          <span class="chip" data-tr-ar>خدمة سريعة</span>
+          <span class="chip" data-tr-en>Fast response</span>
+        </div>
+        <h1 class="hero-title" data-tr-ar>كهرباء، سباكة، وكاميرات مراقبة — <span>بخبرة تقنية حقيقية</span></h1>
+        <h1 class="hero-title" data-tr-en>Electrical, plumbing & CCTV — <span>done right, the first time</span></h1>
+
+        <p class="hero-sub" data-tr-ar>فني كهرباء وسباك محترف يخدم حي الرمال وجميع أحياء الرياض. تركيب كاميرات المراقبة مع إعداد الشبكة بشكل صحيح — بخبرة سابقة في تقنية المعلومات.</p>
+        <p class="hero-sub" data-tr-en>Professional electrician and plumber serving Ar Rimal and all of Riyadh. CCTV installs come with the network actually configured properly — backed by real IT experience.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+966571120917" data-tr-ar>اتصل الآن — 0571120917</a>
+          <a class="btn btn-primary" href="tel:+966571120917" data-tr-en>Call — 0571120917</a>
+          <a class="btn btn-wa" href="https://wa.me/966571120917" target="_blank" data-tr-ar>راسلنا على واتساب</a>
+          <a class="btn btn-wa" href="https://wa.me/966571120917" target="_blank" data-tr-en>Message on WhatsApp</a>
+          <a class="btn btn-ghost" href="#services" data-tr-ar>عرض الخدمات</a>
+          <a class="btn btn-ghost" href="#services" data-tr-en>View Services</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="row">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+          <div>
+            <h4 data-tr-ar>تمديدات وإصلاحات كهربائية</h4>
+            <h4 data-tr-en>Wiring & electrical repair</h4>
+            <p data-tr-ar>مفاتيح، إضاءة، قواطع، أعطال</p>
+            <p data-tr-en>Switches, lighting, breakers, faults</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2v6M12 8a5 5 0 0 1 5 5c0 3-2 4-2 7H9c0-3-2-4-2-7a5 5 0 0 1 5-5z"/></svg></div>
+          <div>
+            <h4 data-tr-ar>سباكة وتسريبات</h4>
+            <h4 data-tr-en>Plumbing & leaks</h4>
+            <p data-tr-ar>مواسير، سخانات، صرف صحي</p>
+            <p data-tr-en>Pipes, water heaters, drainage</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="10" rx="1"/><path d="M16 10l5-3v10l-5-3"/></svg></div>
+          <div>
+            <h4 data-tr-ar>كاميرات مراقبة + شبكة</h4>
+            <h4 data-tr-en>CCTV + network setup</h4>
+            <p data-tr-ar>مشاهدة عن بعد تعمل بشكل صحيح</p>
+            <p data-tr-en>Remote viewing that actually works</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker" data-tr-ar>الخدمات</p>
+      <p class="kicker" data-tr-en>Services</p>
+      <h2 data-tr-ar>ثلاث خدمات، فني واحد تعتمد عليه</h2>
+      <h2 data-tr-en>Three services, one technician you can rely on</h2>
+      <p data-tr-ar>من الأعطال البسيطة إلى تركيب أنظمة كاملة — كل عمل يُنفذ بعناية وضمان.</p>
+      <p data-tr-en>From quick fixes to full installs — every job done carefully, with a guarantee on the work.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="svc reveal">
+        <p class="num">01</p>
+        <h3 data-tr-ar>الكهرباء</h3>
+        <h3 data-tr-en>Electrical</h3>
+        <p data-tr-ar>تمديدات جديدة، إصلاح أعطال، وتركيب إضاءة بأمان وكفاءة.</p>
+        <p data-tr-en>New wiring, fault repair, and lighting installs — done safely and to code.</p>
+        <ul>
+          <li data-tr-ar>تركيب وإصلاح المفاتيح والقواطع</li>
+          <li data-tr-en>Switch & breaker install / repair</li>
+          <li data-tr-ar>تمديدات إضاءة داخلية وخارجية</li>
+          <li data-tr-en>Indoor & outdoor lighting</li>
+          <li data-tr-ar>تشخيص الأعطال الكهربائية</li>
+          <li data-tr-en>Electrical fault diagnosis</li>
+        </ul>
+      </div>
+
+      <div class="svc reveal">
+        <p class="num">02</p>
+        <h3 data-tr-ar>السباكة</h3>
+        <h3 data-tr-en>Plumbing</h3>
+        <p data-tr-ar>من التسريبات الصغيرة إلى تركيب السخانات وخطوط الصرف.</p>
+        <p data-tr-en>From small leaks to water heater installs and drainage lines.</p>
+        <ul>
+          <li data-tr-ar>كشف وإصلاح تسريبات المياه</li>
+          <li data-tr-en>Leak detection & repair</li>
+          <li data-tr-ar>تركيب سخانات المياه</li>
+          <li data-tr-en>Water heater installation</li>
+          <li data-tr-ar>خطوط الصرف الصحي</li>
+          <li data-tr-en>Drainage lines</li>
+        </ul>
+      </div>
+
+      <div class="svc reveal">
+        <p class="num">03</p>
+        <h3 data-tr-ar>كاميرات المراقبة والشبكات</h3>
+        <h3 data-tr-en>CCTV & Networking</h3>
+        <p data-tr-ar>تركيب الكاميرات مع إعداد الشبكة والمشاهدة عن بعد بشكل صحيح من الأساس.</p>
+        <p data-tr-en>Cameras installed with the network and remote viewing set up correctly from day one.</p>
+        <ul>
+          <li data-tr-ar>تركيب كاميرات IP وتقليدية</li>
+          <li data-tr-en>IP & analog camera install</li>
+          <li data-tr-ar>إعداد أجهزة NVR/DVR</li>
+          <li data-tr-en>NVR/DVR configuration</li>
+          <li data-tr-ar>ضبط الراوتر للمشاهدة عن بعد</li>
+          <li data-tr-en>Router setup for remote access</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div>
+        <p class="kicker" data-tr-ar>لماذا نحن</p>
+        <p class="kicker" data-tr-en>Why us</p>
+        <h2 data-tr-ar>خبرة تقنية لا يقدمها فني كاميرات عادي</h2>
+        <h2 data-tr-en>Technical depth most camera installers don't bring</h2>
+
+        <div class="why-list" style="margin-top:28px;">
+          <div class="why-item reveal">
+            <div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+            <div>
+              <h4 data-tr-ar>خبرة IT حقيقية</h4>
+              <h4 data-tr-en>Real IT background</h4>
+              <p data-tr-ar>عمل سابق كمسؤول تقنية معلومات — يعرف الشبكات والراوترات والسيرفرات، لا مجرد تركيب كاميرا.</p>
+              <p data-tr-en>Former IT officer — understands networks, routers, and servers, not just where to bolt a camera.</p>
+            </div>
+          </div>
+          <div class="why-item reveal">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21c-4-3-7-6.5-7-10a7 7 0 0 1 14 0c0 3.5-3 7-7 10z"/></svg></div>
+            <div>
+              <h4 data-tr-ar>خدمة داخل حيك</h4>
+              <h4 data-tr-en>Local to your area</h4>
+              <p data-tr-ar>يخدم حي الرمال وجميع أحياء الرياض المحيطة — استجابة سريعة بدون انتظار طويل.</p>
+              <p data-tr-en>Serving Ar Rimal and every surrounding Riyadh district — quick response, no long waits.</p>
+            </div>
+          </div>
+          <div class="why-item reveal">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-9-9"/></svg></div>
+            <div>
+              <h4 data-tr-ar>عمل واحد يشمل كل شيء</h4>
+              <h4 data-tr-en>One call covers everything</h4>
+              <p data-tr-ar>كهرباء، سباكة، وكاميرات — لا حاجة للتعامل مع أكثر من فني.</p>
+              <p data-tr-en>Electrical, plumbing, and CCTV — no need to juggle three different technicians.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-card reveal">
+        <p class="big" data-tr-ar>"أغلب من يركب كاميرات لا يضبط الشبكة بشكل صحيح — أنا أتعامل مع الجانبين معاً."</p>
+        <p class="big" data-tr-en>"Most installers mount the camera and leave the network half-configured. I handle both sides properly."</p>
+        <p class="sig" data-tr-ar>— فني كهرباء وسباكة، خبرة تقنية معلومات</p>
+        <p class="sig" data-tr-en>— Electrician & plumber, IT-trained</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas">
+  <div class="wrap">
+    <p class="kicker" data-tr-ar>مناطق الخدمة</p>
+    <p class="kicker" data-tr-en>Service areas</p>
+    <h2 data-tr-ar>نخدم الرياض بالكامل</h2>
+    <h2 data-tr-en>Covering all of Riyadh</h2>
+    <div class="area-tags reveal">
+      <span data-tr-ar>حي الرمال</span><span data-tr-en>Ar Rimal</span>
+      <span data-tr-ar>النخيل</span><span data-tr-en>Al Nakheel</span>
+      <span data-tr-ar>الملقا</span><span data-tr-en>Al Malqa</span>
+      <span data-tr-ar>الياسمين</span><span data-tr-en>Al Yasmin</span>
+      <span data-tr-ar>حطين</span><span data-tr-en>Hittin</span>
+      <span data-tr-ar>وجميع أحياء الرياض</span><span data-tr-en>& all Riyadh districts</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="section-head reveal" style="margin-bottom:26px;">
+          <p class="kicker" style="color:var(--amber)" data-tr-ar>تواصل معنا</p>
+          <p class="kicker" style="color:var(--amber)" data-tr-en>Get in touch</p>
+          <h2 data-tr-ar>احتاج فني؟ تواصل الآن</h2>
+          <h2 data-tr-en>Need a technician? Reach out now</h2>
+          <p data-tr-ar>اتصال أو واتساب — رد سريع خلال دقائق في أغلب الأوقات.</p>
+          <p data-tr-en>Call or WhatsApp — usually a reply within minutes.</p>
+        </div>
+
+        <div class="contact-cards">
+          <a class="ccard reveal" href="tel:+966571120917">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M6 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2C10.5 20 4 13.5 4 5a2 2 0 0 1 2-2z"/></svg></div>
+            <div>
+              <h4 data-tr-ar>اتصال مباشر</h4>
+              <h4 data-tr-en>Direct call</h4>
+              <p>057 112 0917</p>
+            </div>
+          </a>
+          <a class="ccard reveal" href="https://wa.me/966571120917" target="_blank">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 1 1-3.8-7.1L21 3l-1.3 3.9A8.5 8.5 0 0 1 21 11.5z"/></svg></div>
+            <div>
+              <h4 data-tr-ar>واتساب</h4>
+              <h4 data-tr-en>WhatsApp</h4>
+              <p data-tr-ar>راسلنا في أي وقت</p>
+              <p data-tr-en>Message anytime</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="hours-box reveal">
+        <h4 data-tr-ar>ساعات العمل</h4>
+        <h4 data-tr-en>Working hours</h4>
+        <div class="hours-row"><span data-tr-ar>السبت — الخميس</span><span data-tr-en>Sat — Thu</span><span>8:00 — 22:00</span></div>
+        <div class="hours-row"><span data-tr-ar>الجمعة</span><span data-tr-en>Friday</span><span data-tr-ar>حسب الطلب</span><span data-tr-en>By request</span></div>
+        <div class="hours-row"><span data-tr-ar>الطوارئ</span><span data-tr-en>Emergency callouts</span><span data-tr-ar>متوفرة</span><span data-tr-en>Available</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="text-align:center;">
+    <img src="data:image/png;base64,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" alt="MH Smart" style="height:24px; width:auto; opacity:.85; margin:0 auto 12px; display:block;">
+    <div>
+      <span data-tr-ar>لخدمات الكهرباء والسباكة — الرياض</span>
+      <span data-tr-en>Electrical &amp; Plumbing Services — Riyadh</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/966571120917" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 1 1-3.8-7.1L21 3l-1.3 3.9A8.5 8.5 0 0 1 21 11.5z"/></svg>
+</a>
+
+<script>
+// Scroll-reveal animation
+(function(){
+  var items = document.querySelectorAll('.reveal');
+  items.forEach(function(el, i){
+    el.style.transitionDelay = (i % 4) * 0.08 + 's';
+  });
+  if('IntersectionObserver' in window){
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
+    items.forEach(function(el){ observer.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('in-view'); });
+  }
+})();
+
+function toggleLang(){
+  const html = document.documentElement;
+  const isAr = html.getAttribute('data-lang') === 'ar';
+  if(isAr){
+    html.setAttribute('lang','en');
+    html.setAttribute('dir','ltr');
+    html.setAttribute('data-lang','en');
+    document.getElementById('langBtn').textContent = 'العربية';
+  } else {
+    html.setAttribute('lang','ar');
+    html.setAttribute('dir','rtl');
+    html.setAttribute('data-lang','ar');
+    document.getElementById('langBtn').textContent = 'English';
+  }
+}
+</script>
+
+</body>
+</html>
